@@ -59,23 +59,5 @@
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
   </a-scene>
-</body><!DOCTYPE html>
-<html>
-  <head>
-    <title>AR.js Image Target Example</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body>
-    <a-scene embedded arjs>
-      <a-assets>
-        <a-asset-item id="model" src="your-3d-model.glb"></a-asset-item>
-      </a-assets>
-      <a-marker preset="custom" type="pattern" url="your-image-target.patt">
-        <a-entity gltf-model="#model" scale="0.1 0.1 0.1"></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
-</html>
+</body>
 
