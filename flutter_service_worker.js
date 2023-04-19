@@ -46,8 +46,8 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
 "flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
 "icons/logo.png": "508623330cb0250a035dd873fcc2ab9b",
-"index.html": "7f647ec132b573a17d56b70926c53386",
-"/": "7f647ec132b573a17d56b70926c53386",
+"index.html": "4f3d878435d5df2686b1c55d5a747260",
+"/": "4f3d878435d5df2686b1c55d5a747260",
 "main.dart.js": "d072bba3c7a5c43067bcb461577f4cb4",
 "manifest.json": "55c1cb04e8a554e1328dee651456b8f6",
 "version.json": "504eb9a5302f4c7485ce227ffd6ff6bc"
