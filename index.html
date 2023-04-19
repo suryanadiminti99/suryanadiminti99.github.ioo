@@ -36,9 +36,24 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3876566734');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2409831560');
       });
     }
+
+    window.addEventListener('load', function (ev) {
+        // Download main.dart.js
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: async function(engineInitializer) {
+            // Initialize the Flutter engine
+            let appRunner = await engineInitializer.initializeEngine();
+            // Run the app
+            await appRunner.runApp();
+          }
+        });
+      });
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
